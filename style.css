@@ -386,6 +386,7 @@ header .navbar {
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .class_offered{
@@ -460,9 +461,10 @@ header .navbar {
 
 .carousel{
     width:100%;
-    height: 80vh;
+    height: 93vh;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
 
 .carousel .list .item{
@@ -473,7 +475,7 @@ header .navbar {
     transform: translate(-70%);
     left: 70%;
     border-radius: 20px;
-    box-shadow: 0 25px 50px (0, 0, 0, 0,3);
+    box-shadow: 0 25px 50px (0, 0, 0, 0.3);
     background-position: 50% 50%;
     background-size: cover;
     z-index: 100;
@@ -540,7 +542,8 @@ header .navbar {
     text-transform: uppercase;
     font-weight: bold;
     line-height: 1;
-    text-shadow: 3px 4px 4px rgba(255, 255, 255, 0.8);
+    color: #E6FF00; 
+    text-shadow: 3px 4px 4px rgba(230, 255, 0, 0.6);/* White shadow */
 
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
@@ -577,7 +580,7 @@ header .navbar {
 
 .content .btn button:nth-child(2){
     background-color: transparent;
-    color: 14ff72cb;
+    color: #14ff72cb;
     border: 2px solid #fff;
     transition: 0.3s;
 }
