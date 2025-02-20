@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
     font-family: montserrat;
     background-color: #111827;
+    overflow-x: hidden;
 }
 
 .main_img-container img{
@@ -460,8 +461,9 @@ header .navbar {
 
 
 .carousel{
+    margin-top: 50px;
     width:100%;
-    height: 93vh;
+    height: 88vh;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -480,7 +482,6 @@ header .navbar {
     background-size: cover;
     z-index: 100;
     transition: 1s;
-
 }
 
 .carousel .list .item:nth-child(1),
@@ -684,7 +685,6 @@ header .navbar {
     .carousel .list .item{
         top: 60%;
         height: 150px;
-        margin-left: 50px;
     }
 
     .content .title, .content .name{
@@ -692,14 +692,154 @@ header .navbar {
     }
 
     .content .btn button{
-        padding: 10px 15px;
-        font-size: 14px;
+        padding: 5px 10px;
+        font-size: 9px;
     }
 
+    .arrows button{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #14ff72cb;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-family: monospace;
+        font-weight: bold;
+        transition: .5s;
+        cursor: pointer;
+    }
+    .arrows{
+        left: 60px;
+    }
 }
 
 
+/*================================================== INSTRUCTORS ===========================*/
+.slider-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .slider-container h5{
+    text-align: center;
+    font-size: 17px;
+    padding-top: 5%;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFF00;
+}
+
+.slider-container h4{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin-bottom: 45px;
+}
+  .slider-images{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+  }
+  .slider-images img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .slider-img{
+    width: 130px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.7s ease;
+  }
+  
+  .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 480px;
+  }
+  .slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+    height: 560px;
+  }
+  .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+    height: 665px;
+  }
+  h1 {
+    font-family: "Jost", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    left: -20px; /* Push it further left */
+    max-width: 100px; /* Prevent overflow */
+    top: 55%;
+    transform: translateY(-50%) rotate(270deg);
+    transition: 0.7s ease;
+    white-space: nowrap; /* Prevent text from wrapping */
+    pointer-events: none; /* Prevent unwanted clicks */
+}
+
+.slider-images .slider-img:last-child h1 {
+    left: -5px; /* Adjust for rightmost image */
+}
+.slider-images .slider-img:nth-child(3) h1 {
+    left: -5px; /* Adjust positioning for the third image */
+}
+
+.detail{
+    position: relative;
+    bottom: 15%;
+    left: 43px;
+  }
+
+  .detail h2{
+    font-family: "Jost", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+  }
+  .detail p{
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 33px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+  }
+
+  .slider-images .slider-img:nth-child(1) .detail {
+    left: 80px; 
+}
+  .slider-img.active{
+    width: 766px !important;
+    height: 750px !important;
+  }
+  .slider-img.active h1{
+     display: none;
+  }
+  .slider-img.active .detail p, .slider-img.active .detail h2{
+    display: block;
+  }
 
 /*================================================== FOOTER =================================================*/
 

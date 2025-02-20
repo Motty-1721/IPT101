@@ -57,3 +57,20 @@ function showslider(type) {
 }
 
 resetTimeAnimation()
+
+jQuery(document).ready(function ($) {
+    $(".slider-img").on("click", function () {
+        if ($(this).hasClass("active")) {
+            // If it's already active, remove active class and hide details
+            $(this).removeClass("active");
+            $(this).find(".details").fadeOut();
+        } else {
+            // Otherwise, activate it and show details
+            $(".slider-img").removeClass("active");
+            $(".details").hide();
+
+            $(this).addClass("active");
+            $(this).find(".details").fadeIn();
+        }
+    });
+});
