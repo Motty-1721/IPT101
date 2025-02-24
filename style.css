@@ -715,7 +715,6 @@ header .navbar {
     }
 }
 
-
 /*================================================== INSTRUCTORS ===========================*/
 .slider-container{
     width: 100%;
@@ -762,6 +761,8 @@ header .navbar {
     cursor: pointer;
     position: relative;
     transition: 0.7s ease;
+    margin-bottom: -80px;
+    
   }
   
   .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
@@ -840,6 +841,162 @@ header .navbar {
   .slider-img.active .detail p, .slider-img.active .detail h2{
     display: block;
   }
+
+
+/*================================================== PRICING =================================================*/
+
+.pricing_container{
+    min-height: 100vh;
+    background: url("https://images.unsplash.com/photo-1598125443421-779f98323fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;  /* Reduced max-width for smaller content */
+    margin: 0 auto;
+    padding: 0 1rem;  /* Reduced horizontal padding */
+    height: 100%;
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6%;
+    padding: 12% 0;
+}
+
+.card {
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+}
+
+.card_title {
+    font-weight: normal;
+    font-size: 26px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pricing {
+    font-weight: normal;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing .small {
+    font-size: 16px;
+}
+
+hr {
+    margin-top: 70px;
+}
+
+.features {
+    margin: 40px 0;
+    list-style-position: inside;
+}
+
+.features li {
+    padding-bottom: 10px;
+}
+
+a.cta_btn {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: rgba(21, 23, 24, 0.7);
+    border-radius: 29px;
+    padding: 20px 0;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: background .3s ease;
+}
+
+a.cta_btn:hover {
+    background: #000;
+}
+.link {
+    position: fixed;
+    background-color: #D12322;
+    padding: 23px 40px;
+    right: -99px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .1s ease-in-out;
+}
+
+.link i {
+    padding-left: 7px;
+}
+
+.link:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+@media only screen and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2%;
+        padding-bottom: 25%;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .card {
+        padding: 30px;
+    }
+
+    .card_title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .pricing {
+        font-size: 52px;
+    }
+
+    hr {
+        margin-top: 50px;
+    }
+
+    a.cta_btn {
+        font-size: 11px;
+    }
+}
+
+}
 
 /*================================================== FOOTER =================================================*/
 
@@ -932,4 +1089,25 @@ header .navbar {
 
 .container{
     margin-top: 50px;
+}
+
+@media (max-width: 700px){
+    .footer_grid_container {
+        flex-direction: column; /* Stack the grid items vertically on smaller screens */
+    }
+
+    .quick-links-footer-grid {
+        margin-left: 0; /* Remove the margin to align it to the left */
+    }
+
+    .fa {
+        margin-top: 20px;
+        width: 30px;
+        text-decoration: none;
+    }
+
+    .social_media a {
+        font-size: 18px;
+        color: white;
+    }
 }
