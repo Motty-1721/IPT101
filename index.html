@@ -1,21 +1,27 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <title>IPT 101</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" 
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+            crossorigin="anonymous"></script>
+        <title>IPT 101</title>
+    </head>
+    
 
 <body>
     <header>
         <nav class="navbar">
 
-            <a href="home.html" class="logo">ABC<span class="sub-text">Martial Arts & Fitness</span></a>
+            <a href="index.html" class="logo">ABC<span class="sub-text">Martial Arts & Fitness</span></a>
     
             <ul class="menu-links">
             <span id="close-menu-btn" class="material-symbols-outlined">close</span>
@@ -96,83 +102,87 @@
             </div>
         </section>
 
-        <div class="carousel">
-            <div class="list">
-                <div class="item" style="background-image: url('HtmlPics/sauna.jpg');">
-                    <div class="content">
-                        <div class="title">SLIDER</div>
-                        <div class="name">SAUNA</div>
-                        <div class="des">Relax and rejuvenate in our sauna, a haven of warmth and tranquility. The sauna offers a dry heat environment that helps soothe muscles, relieve stress, and promote overall well-being. Step inside and let the gentle heat envelop you, providing a perfect way to unwind after a vigorous workout or martial arts session.</div>
-                        <div class="btn">
-                            <button>SEE MORE </button>
+        <section class="carousel_container">
+            <h5>OUR FACILITIES</h5>
+            <h4>EXPERIENCE THE DIFFERENCE</h4>
+            <div class="carousel">
+                <div class="list">
+                    <div class="item" style="background-image: url('HtmlPics/sauna.jpg');">
+                        <div class="content">
+                            <div class="title">REJUVENATING</div>
+                            <div class="name">SAUNA</div>
+                            <div class="des">Relax and recharge in our sauna, a warm retreat that soothes muscles, relieves stress, and enhances well-being—perfect after a workout or martial arts session.</div>
+                            <div class="btn">
+                                <button>SEE MORE </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('HtmlPics/shower.jpg');">
+                        <div class="content">
+                            <div class="title">INVIGORATING</div>
+                            <div class="name">SHOWER</div>
+                            <div class="des">Refresh and recharge in our shower room, where invigorating water cleanses and revitalizes, leaving you energized and renewed.</div>
+                            <div class="btn">
+                                <button>SEE MORE </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('HtmlPics/equipments.jpg');">
+                        <div class="content">
+                            <div class="title">COMPLETE</div>
+                            <div class="name">EQUIPMENT</div>
+                            <div class="des">Train with confidence using our complete, high-quality equipment, designed to support every aspect of your workout and fitness goals.</div>
+                            <div class="btn">
+                                <button>SEE MORE</button>
+                            </div>
+                        </div>
+                    </div>                
+                    <div class="item" style="background-image: url('HtmlPics/locker.jpg');">
+                        <div class="content">
+                            <div class="title">CONTEMPORARY</div>
+                            <div class="name">LOCKER</div>
+                            <div class="des">Enjoy the convenience of our secure, well-organized locker room—store your belongings, change comfortably, and prepare with ease.
+                            </div>
+                            <div class="btn">
+                                <button>SEE MORE </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('HtmlPics/fitting.jpeg');">
+                        <div class="content">
+                            <div class="title">SLEEK</div>
+                            <div class="name">CHANGE ROOM</div>
+                            <div class="des">Experience the comfort of our well-equipped changing rooms, offering privacy and convenience to freshen up and prepare with ease. </div>
+                            <div class="btn">
+                                <button>SEE MORE </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url('HtmlPics/floor.jpg');">
+                        <div class="content">
+                            <div class="title">COMFORTABLE</div>
+                            <div class="name">MATTED FLOOR</div>
+                            <div class="des">Train safely in our fully matted martial arts room, designed for comfort, support, and optimal shock absorption.</div>
+                            <div class="btn">
+                                <button>SEE MORE </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="item" style="background-image: url('HtmlPics/shower.jpg');">
-                    <div class="content">
-                        <div class="title">SLIDER</div>
-                        <div class="name">SHOWER</div>
-                        <div class="des">Immerse yourself in the rejuvenating advantages of our shower room. The enclosed shower space provides an invigorating and refreshing environment, allowing you to cleanse your skin and enjoy a revitalizing experience. Revel in the revitalizing water flow as it revitalizes you, leaving you feeling refreshed and energized. </div>
-                        <div class="btn">
-                            <button>SEE MORE </button>
-                        </div>
-                    </div>
+    
+                <div class="arrows">
+                    <button class="prev"> < </button>
+                    <button class="next"> > </button>
                 </div>
-                <div class="item" style="background-image: url('HtmlPics/equipments.jpg');">
-                    <div class="content">
-                        <div class="title">SLIDER</div>
-                        <div class="name">EQUIPMENT</div>
-                        <div class="des">Explore the advantages of our full and comprehensive equipment offerings. Our facility boasts an extensive array of high-quality tools and devices, ensuring you have access to everything you need for a complete and effective workout. Enjoy the variety and quality of our equipment as you engage in your fitness routine, giving you the resources necessary to achieve your fitness goals.</div>
-                        <div class="btn">
-                            <button>SEE MORE</button>
-                        </div>
-                    </div>
-                </div>                
-                <div class="item" style="background-image: url('HtmlPics/locker.jpg');">
-                    <div class="content">
-                        <div class="title">SLIDER</div>
-                        <div class="name">LOCKER</div>
-                        <div class="des">Embrace the convenience and benefits of our locker room. This dedicated space offers a well-organized and secure area for you to store your belongings, change into your workout attire, and prepare for your activities. Take advantage of the hassle-free facilities as you get ready, leaving you fully equipped and ready to enjoy your day or workout.
-                        </div>
-                        <div class="btn">
-                            <button>SEE MORE </button>
-                        </div>
-                    </div>
+    
+    
+                <!-- time running -->
+                <div class="timeRunning">
+    
                 </div>
-                <div class="item" style="background-image: url('HtmlPics/fitting.jpeg');">
-                    <div class="content">
-                        <div class="title">SLIDER</div>
-                        <div class="name">CHANGE ROOM</div>
-                        <div class="des">Discover the convenience and amenities of our changing rooms. These dedicated spaces offer a private and well-equipped area for you to switch into different outfits or freshen up. Take advantage of the well-maintained facilities as you prepare for your next activity, leaving you feeling comfortable and ready for whatever lies ahead. </div>
-                        <div class="btn">
-                            <button>SEE MORE </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url('HtmlPics/floor.jpg');">
-                    <div class="content">
-                        <div class="title">SLIDER</div>
-                        <div class="name">MATTED FLOOR</div>
-                        <div class="des">Experience the advantages of our fully matted martial arts room. This specially designed space provides a safe and comfortable environment for martial arts training, featuring high-quality mats that offer excellent shock absorption and support. Revel in the cushioned surface as it minimizes impact, ensuring a secure and enjoyable training session. </div>
-                        <div class="btn">
-                            <button>SEE MORE </button>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
-
-            <div class="arrows">
-                <button class="prev"> < </button>
-                <button class="next"> > </button>
-            </div>
-
-
-            <!-- time running -->
-            <div class="timeRunning">
-
-            </div>
-            
-        </div>
+        </section>
         
         <section class="slider-container">
             <h5>OUR TEAM</h5>
@@ -238,45 +248,97 @@
         </section>
 
         <section class="pricing_container">
+            <h5>OUR PRICES</h5>
+            <h4>CHOOSE YOUR PLAN</h4>
             <div class="container">
                 <div class="grid">
                     <div class="card">
                         <h2 class="card_title">Basic</h2>
-                        <p class="pricing">20$</p>
+                        <p class="pricing">$20.00</p>
                         <hr>
                         <ul class="features">
-                            <li>One account</li>
-                            <li>Unlimited songs</li>
-                            <li>Customized playlist</li>
+                            <li>Choose One Martial Art</li>
+                            <li>2 sessions per week</li>
+                            <br>
+                            <p>Appropriate for novices seeking to acquire and enhance their abilities.</p>
                         </ul>
-                        <a href="#" class="cta_btn">Buy Now</a>
+                        <a href="#" class="cta_btn">Enroll Now</a>
                     </div>
                     <div class="card">
                         <h2 class="card_title">Intermediate</h2>
-                        <p class="pricing">39$</p>
+                        <p class="pricing">$39.00</p>
                         <hr>
                         <ul class="features">
-                            <li>One account</li>
-                            <li>Unlimited songs</li>
-                            <li>Customized playlist</li>
+                            <li>Choose One Martial Art</li>
+                            <li>3 sessions per week</li>
+                            <br>
+                            <p>Appropriate for individuals aiming to elevate their abilities.</p>
                         </ul>
-                         <a href="#" class="cta_btn">Buy Now</a>
+                         <a href="#" class="cta_btn">Enroll Now</a>
                     </div>
                     <div class="card">
                         <h2 class="card_title">Advance</h2>
-                        <p class="pricing">60$</p>
+                        <p class="pricing">$60.00</p>
                         <hr>
                         <ul class="features">
-                            <li>Six account</li>
-                            <li>Unlimited songs</li>
-                            <li>Customized playlist</li>
+                            <li>Choose any 2 Martial Art</li>
+                            <li>5 sessions per week</li>
+                            <br>
+                            <p>Appropriate for seasoned martial artists looking to perfect their skills.</p>
                         </ul>
-                         <a href="#" class="cta_btn">Buy Now</a>
+                         <a href="#" class="cta_btn">Enroll Now</a>
                     </div>
+                </div>
+                <div class="see_more_container">
+                    <a href="programs.html"><h3>SEE MORE</h3></a>
                 </div>
             </div>
         </section>
 
+        
+        <section class="login_registration_container">
+            <div class="form">
+                <ul class="tab-group">
+                <li class="tab active"><a href="#signup" style="border-radius: 15px!important;margin-right:8x;">Sign Up</a></li>
+                <li class="tab"><a href="#login" style="border-radius: 15px!important;margin-left:8px;">Log In</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="signup">
+                        <h1>Register</h1>
+                        <form action="/" method="post">
+                        <div class="top-row">
+                            <div class="field-wrap">
+                            <input type="text" required placeholder="First Name" />
+                            </div>
+                            <div class="field-wrap">
+                            <input type="text" required placeholder="Last Name" />
+                            </div>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="email" required placeholder="Email Address"/>
+                        </div>
+                        <div class="field-wrap">
+                            <input type="password" required placeholder="Password" />
+                        </div>
+                        <button type="submit" class="button button-block" />Sign Up</button>
+                        </form>
+                    </div>
+                    <div id="login">
+                        <h1>Welcome Back!</h1>
+                        <form action="/" method="post">
+                        <div class="field-wrap">
+                            <input type="email" required placeholder="Email" />
+                        </div>
+                        <div class="field-wrap">
+                            <input type="password" required placeholder="Password" />
+                        </div>
+                        <p class="forgot"><a href="https://www.web-leb.com/code">Forgot Password?</a></p>
+                        <button class="button button-block" />Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer class="footer_container">
             <div class="footer">
@@ -311,10 +373,10 @@
                             <button class="contact-button">Contact Us</button>
                         </div>
                         <div class="social_media">
-                            <a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank"></a>
-                            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
-                            <a href="https://www.twitter.com/" class="fa fa-twitter" target="_blank"></a>
-                        </div>
+                            <a href="https://www.facebook.com/" class="fab fa-facebook" target="_blank"></a>
+                            <a href="https://www.instagram.com/" class="fab fa-instagram" target="_blank"></a>
+                            <a href="https://www.twitter.com/" class="fab fa-twitter" target="_blank"></a>
+                        </div>                        
                     </div>
                 </div>
                 <div class="privacy_policy_container">
@@ -326,6 +388,7 @@
                 </div>
             </div>
         </footer>
+
     <script src="js/jQuery.js"></script>
     <script src="app.js"></script>
 </body>
